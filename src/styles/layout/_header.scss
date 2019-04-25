@@ -2,6 +2,7 @@
     position: absolute;
     width: 100%;
     padding-top: 50px;
+    z-index: 2;
 
     .header__container {
         flex-direction: row;
@@ -56,6 +57,34 @@
             &:hover {
                 color: $orange;
             }
+        }
+    }
+}
+
+.header--black {
+    color: $black;
+
+    .header__menu {
+        .item__link {
+            color: $black;
+        }
+    }
+
+    .header__contacts {
+        .contacts__tel {
+            color: $black;            
+        }
+
+        .contacts__mail {
+            color: $black;            
+        }
+    }
+}
+
+.header--wb {
+    .header__menu {
+        .item__link--black {
+            color: $black;
         }
     }
 }

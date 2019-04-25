@@ -1,0 +1,9 @@
+.partners {
+    padding: 50px 0;
+
+    .partners__container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

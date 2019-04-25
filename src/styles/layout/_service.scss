@@ -1,0 +1,115 @@
+.service {
+    padding-top: 150px;
+    position: relative;
+
+    .service__bg {
+        position: absolute;
+        background: $black;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+    }
+
+    .service__breadcrumbs {
+        display: flex;
+        align-items: center;
+
+        .item__link {
+            color: $black;
+            font-size: 15px;
+            text-decoration: none;
+            margin-right: 10px;
+            transition: .3s;
+
+            &:hover {
+                color: $orange;
+            }
+
+            &--active {
+                color: $black;
+                opacity: .6;
+            }
+        }
+    }
+
+    .service__content {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        color: #ffff;
+        z-index: 2;
+        margin-top: 30px;
+
+        .content__slider {
+            width: 60%;
+            display: flex;
+
+            .slider__slide {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .slide__img {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .content__about {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+
+            .about__title {
+                font-size: 50px;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .about__price {
+                font-size: 35px;
+                font-weight: bold;
+                color: $orange;
+                margin: 10px 0;
+            }
+
+            .about__text {
+                opacity: .6;
+                font-size: 15px;
+                margin: 0;
+            }
+
+            .about__imgs {
+                display: flex;
+                justify-content: space-around;
+
+                .imgs__img {
+                    max-width: 30%;
+                    max-height: 90px;
+                }
+            }
+        }
+
+        .content__btns {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .btns__btn {
+                background: none;
+                border: none;
+                margin-right: 20px;
+                cursor: pointer;
+                transition: .3s;
+            }
+        }
+    }
+}
