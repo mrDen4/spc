@@ -1,6 +1,7 @@
 .about {
     position: relative;
     background: $black;
+    padding-top: 100px;
 
     .about__bg {
         background: url(../images/about.png) center center no-repeat;
@@ -10,11 +11,10 @@
         top: 0;
         right: 0;
         width: 70%;
-        height: 60%;
+        height: 80%;
     }
 
     .about__text {
-        padding-top: 100px;
         color: #ffffff;
         z-index: 10;
         width: 40%;
@@ -26,6 +26,7 @@
         .about__title {
             font-size: 50px;
             font-weight: bold;
+            margin-bottom: 20px;
         }
 
         .about__text {
@@ -39,11 +40,19 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background: $orange;
-        padding: 50px 0;
+        margin-top: 140px;
+        height: 130px;
+
+        .facts__subtitle {
+            width: 29%;
+            height: 100%;
+            background: $orange;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         .facts__title {
-            width: 25%;
             font-size: 25px;
             font-weight: bold;
             margin: 0;
@@ -53,7 +62,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 75%;
+            width: 70%;
             background: $black;
             height: 100%;
 
@@ -67,7 +76,62 @@
                 &:last-child {
                     border-right: none;
                 }
+
+                .item__name {
+                    font-size: 15px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    margin: 0;
+                }
+
+                .item__num {
+                    color: $orange;
+                    font-size: 35px;
+                    margin: 0;
+                }
             }
         }
+    }
+}
+
+.know {
+    padding-top: 50px;
+
+    .about__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .know__container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content__subtitle {
+        font-size: 15px;
+        color: $orange;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .content__title {
+        font-size: 35px;
+        color: $black;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .content__about {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content__text {
+        color: $black;
+        font-size: 15px;
     }
 }

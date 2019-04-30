@@ -440,7 +440,8 @@ ul {
 
 .about {
   position: relative;
-  background: #0B1420; }
+  background: #0B1420;
+  padding-top: 100px; }
   .about .about__bg {
     background: url(../images/about.png) center center no-repeat;
     background-size: cover;
@@ -449,9 +450,8 @@ ul {
     top: 0;
     right: 0;
     width: 70%;
-    height: 60%; }
+    height: 80%; }
   .about .about__text {
-    padding-top: 100px;
     color: #ffffff;
     z-index: 10;
     width: 40%; }
@@ -459,7 +459,8 @@ ul {
       width: 100%; }
     .about .about__text .about__title {
       font-size: 50px;
-      font-weight: bold; }
+      font-weight: bold;
+      margin-bottom: 20px; }
     .about .about__text .about__text {
       font-size: 15px;
       opacity: .6; }
@@ -468,10 +469,16 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #FFA20D;
-    padding: 50px 0; }
+    margin-top: 140px;
+    height: 130px; }
+    .about .about__facts .facts__subtitle {
+      width: 29%;
+      height: 100%;
+      background: #FFA20D;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
     .about .about__facts .facts__title {
-      width: 25%;
       font-size: 25px;
       font-weight: bold;
       margin: 0; }
@@ -479,7 +486,7 @@ ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 75%;
+      width: 70%;
       background: #0B1420;
       height: 100%; }
       .about .about__facts .facts__list .list__item {
@@ -490,3 +497,42 @@ ul {
         border-right: 2px solid rgba(236, 236, 236, 0.055); }
         .about .about__facts .facts__list .list__item:last-child {
           border-right: none; }
+        .about .about__facts .facts__list .list__item .item__name {
+          font-size: 15px;
+          font-weight: bold;
+          color: #ffffff;
+          margin: 0; }
+        .about .about__facts .facts__list .list__item .item__num {
+          color: #FFA20D;
+          font-size: 35px;
+          margin: 0; }
+
+.know {
+  padding-top: 50px; }
+  .know .about__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .know .know__container {
+    align-items: center;
+    justify-content: center; }
+  .know .content__subtitle {
+    font-size: 15px;
+    color: #FFA20D;
+    text-align: center;
+    margin-bottom: 0; }
+  .know .content__title {
+    font-size: 35px;
+    color: #0B1420;
+    text-align: center;
+    margin-top: 0; }
+  .know .content__about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .know .content__text {
+    color: #0B1420;
+    font-size: 15px; }
