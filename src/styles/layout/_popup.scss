@@ -1,0 +1,104 @@
+.popup {
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    background: $orange;
+    top: -50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -200px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 110;
+    transition: .3s;
+
+    &--active {
+        top: 50%;
+    }
+
+    .popup__exit {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        transition: .3s;
+
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+
+    .popup__form {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+
+        .form__title {
+            font-size: 35px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .form__inp {
+            background: none;
+            color: #fff;
+            border: none;
+            border-bottom: 2px solid #fff;
+            margin-bottom: 30px;
+            height: 45px;
+            padding-left: 10px;
+            font-size: 20px;
+            outline: none;
+
+            &::-moz-placeholder {
+                color: #ffffff;
+                font-size: 20px;  
+            }
+
+            &::-webkit-input-placeholder {
+                color: #ffffff;
+                font-size: 20px;  
+            }
+        }
+
+        .form__btn {
+            height: 45px;
+            color: #fff;
+            background: $orange;
+            border: 1px solid #fff;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: .3s;
+
+            &:hover {
+                border: none;
+                background: #fff;
+                color: $black;
+            }
+        }
+    }
+}
+
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 0vh;
+    background: $black;
+    opacity: .7;
+    top: 0;
+    z-index: 100;
+    transition: .3s;
+
+    &--active {
+        height: 100vh;
+    }
+}

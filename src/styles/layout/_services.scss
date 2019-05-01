@@ -11,6 +11,12 @@
     .services__text {
         font-size: 15px;
         text-align: center;
+
+        .text__link {
+            text-decoration: none;
+            color: $orange;
+            font-weight: bold;
+        }
     }
 
     .services__list {

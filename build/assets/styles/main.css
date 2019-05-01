@@ -108,6 +108,8 @@ ul {
     display: flex; }
     .hero .hero__list .list__item {
       margin-right: 80px; }
+    .hero .hero__list .item__img {
+      margin-right: 20px; }
   .hero .hero__btn {
     background: linear-gradient(90deg, #FFA20D 0%, #FFB402 100%);
     border-radius: 100px;
@@ -279,6 +281,10 @@ ul {
   .services .services__text {
     font-size: 15px;
     text-align: center; }
+    .services .services__text .text__link {
+      text-decoration: none;
+      color: #FFA20D;
+      font-weight: bold; }
   .services .services__list {
     display: flex;
     flex-wrap: wrap;
@@ -416,7 +422,15 @@ ul {
       .service .service__content .content__about .about__text {
         opacity: .6;
         font-size: 15px;
-        margin: 0; }
+        margin: 0;
+        margin-bottom: 10px; }
+      .service .service__content .content__about .about__list {
+        padding-left: 20px;
+        list-style-type: disc;
+        font-size: 15px;
+        opacity: .6; }
+        .service .service__content .content__about .about__list .list__item {
+          margin-bottom: 10px; }
       .service .service__content .content__about .about__imgs {
         display: flex;
         justify-content: space-around; }
@@ -437,6 +451,28 @@ ul {
         margin-right: 20px;
         cursor: pointer;
         transition: .3s; }
+
+.service-about .service-about__title {
+  text-align: center;
+  font-size: 35px; }
+
+.service-about .service-about__text {
+  font-size: 16px;
+  margin-bottom: 5px; }
+
+.service-about .service-about__list {
+  padding-left: 40px;
+  list-style-type: disc;
+  margin-top: 10px; }
+  .service-about .service-about__list--num {
+    list-style-type: decimal; }
+  .service-about .service-about__list .list__item {
+    font-size: 15px;
+    margin-bottom: 5px; }
+
+.service-about .service-about__subtitle {
+  font-size: 30px;
+  font-weight: bold; }
 
 .about {
   position: relative;
@@ -522,6 +558,9 @@ ul {
     color: #FFA20D;
     text-align: center;
     margin-bottom: 0; }
+    .know .content__subtitle .subtitle__link {
+      color: #FFA20D;
+      font-weight: bold; }
   .know .content__title {
     font-size: 35px;
     color: #0B1420;
@@ -536,3 +575,84 @@ ul {
   .know .content__text {
     color: #0B1420;
     font-size: 15px; }
+
+.popup {
+  position: fixed;
+  width: 400px;
+  height: 500px;
+  background: #FFA20D;
+  top: -50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -200px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 110;
+  transition: .3s; }
+  .popup--active {
+    top: 50%; }
+  .popup .popup__exit {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: .3s; }
+    .popup .popup__exit:hover {
+      transform: rotate(180deg); }
+  .popup .popup__form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px; }
+    .popup .popup__form .form__title {
+      font-size: 35px;
+      text-align: center;
+      margin-top: 0; }
+    .popup .popup__form .form__inp {
+      background: none;
+      color: #fff;
+      border: none;
+      border-bottom: 2px solid #fff;
+      margin-bottom: 30px;
+      height: 45px;
+      padding-left: 10px;
+      font-size: 20px;
+      outline: none; }
+      .popup .popup__form .form__inp::-moz-placeholder {
+        color: #ffffff;
+        font-size: 20px; }
+      .popup .popup__form .form__inp::-webkit-input-placeholder {
+        color: #ffffff;
+        font-size: 20px; }
+    .popup .popup__form .form__btn {
+      height: 45px;
+      color: #fff;
+      background: #FFA20D;
+      border: 1px solid #fff;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: .3s; }
+      .popup .popup__form .form__btn:hover {
+        border: none;
+        background: #fff;
+        color: #0B1420; }
+
+.bg {
+  position: fixed;
+  width: 100vw;
+  height: 0vh;
+  background: #0B1420;
+  opacity: .7;
+  top: 0;
+  z-index: 100;
+  transition: .3s; }
+  .bg--active {
+    height: 100vh; }

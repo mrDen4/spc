@@ -17,16 +17,16 @@
     <div class="wrapper">
         <header class="header">
             <div class="container header__container">
-                <a href="#" class="header__logo">
+                <a href="./index.html" class="header__logo">
                     <img src="./assets/images/logo.png" alt="СпецПромСервис" class="logo__img">
                 </a>
                 <ul class="header__menu">
-                    <li class="menu__item"><a href="#" class="item__link">Услуги</a></li>
-                    <li class="menu__item"><a href="#" class="item__link">О компании</a></li>
+                    <li class="menu__item"><a href="./services.html" class="item__link">Услуги</a></li>
+                    <li class="menu__item"><a href="./about.html" class="item__link">О компании</a></li>
                 </ul>
                 <div class="header__contacts">
-                    <a href="#" class="contacts__tel">+ 7 999 999-99-99</a>
-                    <a href="#" class="contacts__mail">customer@mail.ru</a>
+                    <a href="tel:+74959243530" class="contacts__tel">+7 (495) 924-35-30</a>
+                    <a href="mailto:info@spsservice.msk.ru" class="contacts__mail">info@spsservice.msk.ru</a>
                 </div>
             </div>
         </header>
@@ -37,9 +37,18 @@
                     Любые строительные работы под ключ
                 </h1>
                 <ul class="hero__list">
-                    <li class="list__item">От 15 000 рублей</li>
-                    <li class="list__item">Без предоплаты</li>
-                    <li class="list__item">Скидка 50%</li>
+                    <li class="list__item">
+                        <img src="./assets/images/check.png" alt="наше преимущество" class="item__img">
+                        От 15 000 рублей
+                    </li>
+                    <li class="list__item">
+                        <img src="./assets/images/check.png" alt="наше преимущество" class="item__img">
+                        Без предоплаты
+                    </li>
+                    <li class="list__item">
+                        <img src="./assets/images/check.png" alt="наше преимущество" class="item__img">
+                        Скидка 50%
+                    </li>
                 </ul>
                 <button class="hero__btn">Оставить заявку</button>
             </div>
@@ -103,37 +112,48 @@
                 <ul class="contacts__list">
                     <li class="list__item">
                         <img src="./assets/images/contacts/phone.png" alt="телефон" class="item__img">
-                        <a href="#" class="item__link">+ 7 999 999-99-99</a>
-                        <a href="#" class="item__link">+ 7 495 888-55-22</a>
+                        <a href="tel:+74959243530" class="item__link">+7 (495) 924-35-30</a>
+                        <a href="tel:+74959243530" class="item__link">+7 (495) 924-35-30</a>
                     </li>
                     <li class="list__item">
                         <img src="./assets/images/contacts/mail.png" alt="телефон" class="item__img">
-                        <a href="#" class="item__link">customermail@mail.ru</a>
+                        <a href="mailto:info@spsservice.msk.ru" class="item__link">info@spsservice.msk.ru</a>
                     </li>
                     <li class="list__item">
                         <img src="./assets/images/contacts/adress.png" alt="телефон" class="item__img">
-                        <a href="#" class="item__link">Моск. обл., г. Химки, ул. Библиотечная, д. 7</a>
+                        <a href="#" class="item__link">Москва, г. Зеленоград, проезд №4922, дом 4, Технопарк "ЭЛМА"</a>
                     </li>
                 </ul>
             </div>
         </section>
         <footer class="footer">
             <div class="container footer__container">
-                <div class="footer__logo">
+                <a href="./index.html" class="footer__logo">
                     <img src="./assets/images/logo.png" alt="Логотип" class="logo__img">
-                </div>
+                </a>
                 <ul class="footer__menu">
-                    <li class="menu__item"><a href="#" class="item__link">Услуги</a></li>
-                    <li class="menu__item"><a href="#" class="item__link">О компании</a></li>
+                    <li class="menu__item"><a href="./services.html" class="item__link">Услуги</a></li>
+                    <li class="menu__item"><a href="./about.html" class="item__link">О компании</a></li>
                 </ul>
                 <div class="footer__dw">
                     <a href="#" class="dw__link">
-                        <img src="./assets/images/dw.png" alt="#" class="dw__logo">                    
+                        <img src="./assets/images/dw.png" alt="#" class="dw__logo">
                         Создание и продвижение сайтов
                     </a>
                 </div>
             </div>
         </footer>
+        <div class="popup">
+            <button class="popup__exit">&#10008;</button>
+            <form class="popup__form">
+                <h2 class="form__title">Оставить заявку</h2>
+                <input type="text" class="form__inp" placeholder="Имя">
+                <input type="text" class="form__inp" placeholder="Телефон">
+                <input type="text" class="form__inp" placeholder="E-mail">
+                <button class="form__btn">Отправить</button>
+            </form>
+        </div>
+        <div class="bg"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
