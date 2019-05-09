@@ -6,10 +6,29 @@
     .footer__container {
         flex-direction: row;
         justify-content: space-between;
+
+        @include phones() {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .footer__logo {
+        @include phones() {
+            margin-bottom: 20px;
+        }
     }
 
     .footer__menu {
         display: flex;
+
+        @include phones() {
+            margin-bottom: 20px;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
 
         .item__link {
             color: #ffffff;
@@ -17,6 +36,10 @@
             transition: .3s;
             margin-right: 20px;
             font-size: 20px;
+
+            @include phones() {
+                margin-right: 0;
+            }
 
             &:hover {
                 color: $orange;
@@ -26,6 +49,10 @@
 
     .footer__dw {
         display: flex;
+
+        @include phones() {
+            margin-bottom: 20px;
+        }
 
         .dw__link {
             color: #ffffff;

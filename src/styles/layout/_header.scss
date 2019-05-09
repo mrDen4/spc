@@ -4,18 +4,38 @@
     padding-top: 50px;
     z-index: 2;
 
+    @include phones() {
+        padding-top: 25px;
+    }
+
     .header__container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @include phones() {
+            flex-direction: column;
+        }
     }
 
     .logo__img {
-        height: 50px;
+        height: 60px;
+
+        @include phones() {
+            margin-bottom: 15px;
+        }
     }
 
     .header__menu {
         display: flex;
+
+        @include phones() {
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 15px;
+        }
 
         .item__link {
             color: #ffffff;
@@ -24,6 +44,10 @@
             font-weight: bold;
             margin-right: 45px;
             transition: .3s;
+
+            @include phones() {
+                margin-right: 0;
+            }
 
             &:hover {
                 color: $orange;
@@ -85,6 +109,28 @@
     .header__menu {
         .item__link--black {
             color: $black;
+        }
+
+        .item__link {
+            @include phones() {
+                color: $black;
+            }
+        }
+    }
+
+    .header__contacts {
+        .contacts__tel {
+
+            @include phones() {
+                color: $black;            
+            }
+        }
+
+        .contacts__mail {
+
+            @include phones() {
+                color: $black;            
+            }
         }
     }
 }

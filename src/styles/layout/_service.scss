@@ -2,6 +2,10 @@
     padding-top: 150px;
     position: relative;
 
+    @include phones() {
+        padding-top: 200px;
+    }
+
     .service__bg {
         position: absolute;
         background: $black;
@@ -10,6 +14,10 @@
         top: 0;
         right: 0;
         z-index: 1;
+
+        @include phones() {
+            display: none;
+        }
     }
 
     .service__breadcrumbs {
@@ -43,9 +51,19 @@
         z-index: 2;
         margin-top: 30px;
 
+        @include phones() {
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .content__slider {
             width: 60%;
             display: flex;
+
+            @include phones() {
+                width: 100%;
+                order: -2;
+            }
 
             .slider__slide {
                 width: 100%;
@@ -64,10 +82,18 @@
             flex-direction: column;
             width: 35%;
 
+            @include phones() {
+                width: 100%;
+            }
+
             .about__title {
                 font-size: 50px;
                 font-weight: bold;
                 margin: 0;
+
+                @include phones() {
+                    color: $black;
+                }
             }
 
             .about__price {
@@ -82,6 +108,10 @@
                 font-size: 15px;
                 margin: 0;
                 margin-bottom: 10px;
+
+                @include phones() {
+                    color: $black;
+                }
             }
 
             .about__list {
@@ -89,6 +119,10 @@
                 list-style-type: disc;
                 font-size: 15px;
                 opacity: .6;
+
+                @include phones() {
+                    color: $black;
+                }
 
                 .list__item {
                     margin-bottom: 10px;
@@ -115,12 +149,24 @@
             margin-top: 20px;
             margin-bottom: 20px;
 
+            @include phones() {
+                margin: 0;
+                order: -1;
+            }
+
             .btns__btn {
                 background: none;
                 border: none;
                 margin-right: 20px;
                 cursor: pointer;
                 transition: .3s;
+
+                @include phones() {
+                    background: $orange;  
+                    width: 50px;    
+                    margin-top: 10px;
+                    padding: 5px;                  
+                }
             }
         }
     }

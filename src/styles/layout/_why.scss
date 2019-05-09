@@ -10,7 +10,6 @@
     .why__list {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         justify-content: space-between;
 
         .list__item {
@@ -19,6 +18,10 @@
             text-align: center;
             color: $black;
             font-weight: bold;
+
+            @include phones() {
+                width: 100%;
+            }
         }
     }
 }

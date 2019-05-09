@@ -5,5 +5,17 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+
+        @include phones() {
+            flex-direction: column;
+        }
+    }
+
+    .partners__img {
+        width: 25%;
+
+        @include phones() {
+            width: 100%;
+        }
     }
 }
